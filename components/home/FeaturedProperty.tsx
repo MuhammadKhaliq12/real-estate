@@ -23,7 +23,7 @@ export const FeaturedProperty: FC<FeaturedPropertyProps> = (props) => {
   return (
     <div className="px-6 mt-10">
       {props.showMainHeading && props.mainHeading && (
-        <div className="flex items-center  text-gray-700 mb-6">
+        <div className="flex items-center text-gray-700 mb-6">
           <span className="w-20 h-[2px] bg-[#c29b40] mx-3"></span>
           <h2 className="text-4xl font-serif font-semibold">
             {props.mainHeading}
@@ -31,23 +31,26 @@ export const FeaturedProperty: FC<FeaturedPropertyProps> = (props) => {
         </div>
       )}
 
-      <div className="flex justify-center items-center text-gray-700 mb-8">
-        <span className="w-24 h-[2px] bg-[#c29b40] mx-3"></span>
-        <h1 className="text-3xl font-serif font-extralight">
-          {props.subHeading}
-        </h1>
+      <div className="flex flex-col md:flex-row justify-around items-center text-gray-700 mb-8">
+        <div className="text-white"></div>
+        <div className="flex items-center">
+          <span className="w-24 h-[2px] bg-[#c29b40] mx-3"></span>
+          <h1 className="text-3xl font-serif font-extralight">
+            {props.subHeading}
+          </h1>
+        </div>
 
-        <p className="flex">
+        <p className="flex gap-2 font-serif">
           View All
-          <ArrowLongRightIcon className="w-3 h-6" />
+          <ArrowLongRightIcon className="w-3 h-6 stroke-5" />
         </p>
       </div>
 
-      <div className="flex gap-6 items-center justify-center overflow-x-auto">
+      <div className="flex gap-6 items-center justify-center overflow-x-auto flex-wrap">
         {props.properties.map((property, index) => (
           <div
             key={index}
-            className="relative w-80 bg-white rounded-lg shadow-lg"
+            className="relative w-80 bg-white rounded-lg shadow-lg mb-4"
           >
             <div>
               <Image
@@ -55,7 +58,7 @@ export const FeaturedProperty: FC<FeaturedPropertyProps> = (props) => {
                 alt=""
                 width={100}
                 height={100}
-                className="rounded-lg h-72 w-5xl"
+                className="rounded-t-lg h-72 w-full object-cover"
               />
             </div>
 

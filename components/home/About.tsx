@@ -8,7 +8,7 @@ export const About = () => {
     <>
       <section className="py-12 px-0 text-[#2c0506] w-full">
         <div className="grid md:grid-cols-2 gap-12 font-sans items-center">
-          <div className="text-center md:text-left flex flex-col items-center md:items-center">
+          <div className="text-center md:text-left flex flex-col items-center md:items-center ml-36">
             <h2 className="text-3xl mb-4 font-serif text-center w-full">
               About Us
             </h2>

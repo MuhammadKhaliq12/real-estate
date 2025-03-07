@@ -21,7 +21,7 @@ export const OurLocation: FC<Props> = (props) => {
         <h1 className="text-3xl font-serif font-extralight">{props.heading}</h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 m-7 gap-4 bg-gray-100 text-black">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 m-7 gap-4 bg-gray-300 text-black">
         {props.locations.length > 0 ? (
           props.locations.map((location, index) => (
             <div key={index} className="relative group">

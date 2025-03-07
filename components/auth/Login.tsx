@@ -1,16 +1,13 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { RootState, AppDispatch } from "@/store/store";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 
 export type Props = {
   isVisible: boolean;
 };
 
 export const Login: FC<Props> = (props) => {
-  const router = useRouter();
   const dispatch = useDispatch<AppDispatch>();
   const { loginError, loggedInUser } = useSelector(
     (state: RootState) => state.auth

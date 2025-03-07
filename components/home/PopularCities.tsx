@@ -21,8 +21,8 @@ const popularCities = [
 
 export const PopularCities: FC = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-12 text-center">
-      <h2 className="text-3xl md:text-4xl font-serif text-gray-900 flex items-center justify-center">
+    <section className="max-w-5xl mx-auto px-4 py-12 text-center font-serif">
+      <h2 className="text-3xl md:text-4xl text-gray-900 flex items-center justify-center">
         <span className="w-[4rem] h-[2px] bg-[#c29b40] mr-3"></span>
         Real Estate in Popular Cities
       </h2>
@@ -38,7 +38,7 @@ export const PopularCities: FC = () => {
         ))}
       </div>
 
-      <button className="mt-6 px-6 py-2 bg-[#2d0c04] text-white rounded-full text-lg font-medium transition duration-300 font-sans hover:bg-[#c29b40]">
+      <button className="mt-6 px-6 py-2 bg-[#2d0c04] opacity-90 text-white rounded-full text-lg font-medium transition duration-300 hover:bg-[#c29b40]">
         View All
       </button>
     </section>
